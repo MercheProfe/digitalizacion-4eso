@@ -4,6 +4,8 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
+import UnitIcon from '@site/src/components/UnitIcon';
+
 
 function HomepageHeader() {
   return (
@@ -66,13 +68,27 @@ function HomepageHeader() {
   );
 }
 
-function LearningCard({number, title, children}) {
+function LearningCard({number, icon, title, children, link, accent}) {
   return (
-    <article className={styles.learningCard}>
-      <span className={styles.cardNumber}>{number}</span>
+    <Link
+      to={link}
+      className={`${styles.learningCard} ${styles[accent]}`}>
+
+      <div className={styles.cardTop}>
+        <span className={styles.cardNumber}>{number}</span>
+        <span className={styles.cardIcon}>
+          <UnitIcon type={icon} />
+        </span>
+      </div>
+
       <Heading as="h3">{title}</Heading>
+
       <p>{children}</p>
-    </article>
+
+      <span className={styles.cardLink}>
+        Explorar unidad →
+      </span>
+    </Link>
   );
 }
 
@@ -83,31 +99,79 @@ function LearningSection() {
 
         <div className={styles.sectionHeading}>
           <span>ESTE CURSO</span>
-          <Heading as="h2">Vamos a aprender haciendo</Heading>
+
+          <Heading as="h2">
+            6 retos. Un curso para crear.
+          </Heading>
+
           <p>
-            Exploraremos cómo funciona la tecnología que utilizamos cada día
-            y aprenderemos a utilizarla de forma creativa, segura y responsable.
+            Aprende tecnología resolviendo problemas, creando contenidos
+            y desarrollando tus propios proyectos.
           </p>
         </div>
 
         <div className={styles.cardGrid}>
-          <LearningCard number="01" title="Comprende">
-            Descubre cómo funcionan los dispositivos, las redes y los
-            servicios digitales.
+
+          <LearningCard
+            number="01"
+            icon="computer"
+            title="Mi ordenador por dentro"
+            link="/docs/01-ordenador/"
+            accent="purple">
+            Descubre cómo funciona un ordenador y aprende a elegir
+            el equipo adecuado.
           </LearningCard>
 
-          <LearningCard number="02" title="Crea">
-            Diseña contenidos y soluciones digitales utilizando diferentes
-            herramientas.
+          <LearningCard
+            number="02"
+            icon="cloud"
+            title="Mi entorno digital"
+            link="/docs/02-entorno-digital/"
+            accent="cyan">
+            Organiza archivos, trabaja en la nube y domina las
+            herramientas digitales del día a día.
           </LearningCard>
 
-          <LearningCard number="03" title="Protégete">
-            Aprende a desenvolverte en Internet de forma segura y responsable.
+          <LearningCard
+            number="03"
+            icon="media"
+            title="Crea contenido"
+            link="/docs/03-contenido-digital/"
+            accent="pink">
+            Diseña imágenes, audio y vídeo para comunicar tus ideas
+            de forma creativa.
           </LearningCard>
 
-          <LearningCard number="04" title="Experimenta">
-            Resuelve retos y proyectos aplicando lo aprendido.
+          <LearningCard
+            number="04"
+            icon="security"
+            title="Seguridad en Internet"
+            link="/docs/04-seguridad/"
+            accent="lime">
+            Protege tus cuentas, tu privacidad y tu identidad
+            cuando utilizas Internet.
           </LearningCard>
+
+          <LearningCard
+            number="05"
+            icon="network"
+            title="Internet y redes"
+            link="/docs/05-internet-redes/"
+            accent="blue">
+            Descubre cómo se conectan los dispositivos y cómo
+            funciona Internet.
+          </LearningCard>
+
+          <LearningCard
+            number="06"
+            icon="app"
+            title="Crea tu primera app"
+            link="/docs/06-primera-app/"
+            accent="orange">
+            Diseña y programa una aplicación capaz de resolver
+            un problema real.
+          </LearningCard>
+
         </div>
 
       </div>

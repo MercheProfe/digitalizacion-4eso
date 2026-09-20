@@ -6,7 +6,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Digitalización 4º ESO',
   tagline: 'Aprende, crea y comprende el mundo digital',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
 
   future: {
     v4: true,
@@ -61,13 +61,13 @@ const config = {
         title: 'Digitalización',
         logo: {
           alt: 'Digitalización 4º ESO',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
 
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'digitalizacionSidebar',
             position: 'left',
             label: 'Apuntes',
           },
