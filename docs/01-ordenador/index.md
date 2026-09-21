@@ -1,7 +1,10 @@
 ---
 sidebar_position: 1
 title: "UD 1. Mi ordenador por dentro"
+slug: /01-ordenador
 ---
+
+# UD 1. Mi ordenador por dentro
 
 # UD 1. Mi ordenador por dentro
 

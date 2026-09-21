@@ -58,26 +58,27 @@ const config = {
       },
 
       navbar: {
-        title: 'Digitalización',
-        logo: {
-          alt: 'Digitalización 4º ESO',
-          src: 'img/logo.png',
-        },
-
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'digitalizacionSidebar',
-            position: 'left',
-            label: 'Apuntes',
-          },
-          {
-            href: 'https://github.com/MercheProfe/digitalizacion-4eso',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
+  title: 'Digitalización',
+  logo: {
+    alt: 'Digitalización 4º ESO',
+    src: 'img/favicon.png',
+  },
+  items: [
+    {
+      type: 'docSidebar',
+      sidebarId: 'digitalizacionSidebar',
+      position: 'left',
+      label: 'Apuntes',
+    },
+    {
+      href: 'https://classroom.google.com/c/MTYyNjgxNzIyMDYz',
+      label: 'Actividades - Classroom',
+      position: 'right',
+      target: '_blank',
+      rel: 'noopener noreferrer',
+    },
+  ],
+},
 
       footer: {
         style: 'dark',
@@ -92,15 +93,7 @@ const config = {
               },
             ],
           },
-          {
-            title: 'Recursos',
-            items: [
-              {
-                label: 'Repositorio GitHub',
-                href: 'https://github.com/MercheProfe/digitalizacion-4eso',
-              },
-            ],
-          },
+          
         ],
 
         copyright: `Material educativo · Digitalización 4º ESO`,
