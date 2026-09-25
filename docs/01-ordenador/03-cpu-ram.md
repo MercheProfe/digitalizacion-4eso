@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-title: "3. CPU y memoria RAM"
+title: "1.3. CPU y memoria RAM"
 ---
 
 import Tabs from '@theme/Tabs';

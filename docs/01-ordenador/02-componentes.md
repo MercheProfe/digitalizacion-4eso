@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-title: "2. Los componentes del ordenador"
+title: "1.2. Los componentes del ordenador"
 ---
 
 import Tabs from '@theme/Tabs';
