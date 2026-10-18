@@ -1,6 +1,6 @@
 ---
-sidebar_position: 2
-title: "UD 2. Mi entorno digital de trabajo"
+sidebar_position: 1
+title: "Índice de UD2"
 slug: /02-entorno-digital
 ---
 
